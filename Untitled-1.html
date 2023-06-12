@@ -68,7 +68,7 @@
 <body>
   <h1>טופס הרשמה לטיסה פרטית</h1>
 
-  <form id="registration-form" onsubmit="redirectToNewPage(event)" action="">
+  <form id="registration-form" onsubmit="redirectToNewPage(event)" action="./home_page.html">
     <label for="full-name">שם מלא:</label>
     <input type="text" id="full-name" name="full-name" required>
 
@@ -93,7 +93,7 @@
 
       // כאן ניתן לבצע פעולות נוספות לפני הניתוב לדף החדש
 
-      window.location.href = "דף_חדש.html"; // הניתוב לדף החדש
+      window.open("דף_בית.html", "_blank"); // פתיחת דף בית בחלון חדש
     }
   </script>
 </body>
