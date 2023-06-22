@@ -6,11 +6,11 @@
     body 
     {
       font-family: Arial, sans-serif;
-      background-image: url("https://shaul-wallpaper.co.il/wp-content/uploads/cloud/1585.jpg");
-      background-size: cover;
+      background-image: url("https://www.diamondaircraft.com/fileadmin/_processed_/3/a/csm_line-up_private-pilots_a8e355b84d.jpg");
+      background-size: auto;
       background-position: center;
       margin: 0;
-      padding: 20px;
+      padding: 200px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,25 +18,26 @@
     }
     h1 {
       text-align: center;
-      color: #333333;
+      color: #0d53e0db;
       margin-top: 50px;
     }
 
     form {
       text-align: center;
       max-width: 500px;
-      background-color: #ffffff;
+      background-color: rgba(0,0,0,.2);
       padding: 30px;
       margin-top: 20px;
       margin-bottom: 50px;
       border-radius: 5px;
-      box-shadow: 0px 0px 5px rgba(188, 15, 15, 0.1);
+      box-shadow: 0px 0px 5px rgba(188, 15, 15, 0.5);
     }
 
     label {
       display: block;
       margin-bottom: 10px;
       font-weight: bold;
+         
     }
 
     
@@ -52,6 +53,8 @@
       width: 50%; /* רוחב הכפתור */
       display: block; /* הצגה כבלוק */
       margin: 0 auto; /* מרווחים אוטומטיים */
+      margin-top: 20px; /* ערך זה משנה את המרווח מלמעלה */
+      
     }
 
     input[type="submit"]:hover {
@@ -60,7 +63,7 @@
   </style>
 </head>
 <body>
-  <h1>LogIn</h1>
+  <h1>Login</h1>
 
   <form id="registration-form" onsubmit="redirectToNewPage(event)" action="./home_page.html">
 
@@ -68,10 +71,10 @@
     <input type="text" id="pilot-license" name="pilot-license" required>
 
     <label for="Password">Password</label>
-    <input type="phone" id="Password" name="Password" required>
+    <input type="password" id="Password" name="Password" required>
 
 
-    <input type="submit" value="SigIn">
+    <input type="submit" value="SIGN IN">
   </form>
 
   
