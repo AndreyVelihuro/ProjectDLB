@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>טופס הרשמה לטיסה פרטית</title>
+  <style>
+    body 
+    h1 {
+      color: #333333;
+      margin-top: 50px;
+    }
+
+    form {
+      max-width: 500px;
+      background-color: #ffffff;
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 50%; /* רוחב הכפתור */
+      display: block; /* הצגה כבלוק */
+      margin: 0 auto; /* מרווחים אוטומטיים */
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>LogIn</h1>
+
+  <form id="registration-form" onsubmit="redirectToNewPage(event)" action="./home_page.html">
+
+    <label for="pilot-license">Pilot license Number:</label>
+    <input type="text" id="pilot-license" name="pilot-license" required>
+
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="Password" required>
+
+
+    <input type="submit" value="SigIn">
+  </form>
+
+  
+
+</body>
+</html>
